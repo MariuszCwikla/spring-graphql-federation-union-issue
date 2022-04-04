@@ -1,0 +1,17 @@
+# Spring GraphQL federation interface/union issue
+
+Repo created for the purpose of reporting an issue.
+
+Application fails with the error:
+
+----
+Caused by: graphql.schema.idl.errors.SchemaProblem: errors=[There is no type resolver defined for interface / union 'ProductResult' type]
+----
+
+However if you disable federation, e.g. by commenting this out then app runs fine:
+
+----
+//@Configuration		//comment this out
+public class SpringGraphqlFedrationConfiguration {
+----
+

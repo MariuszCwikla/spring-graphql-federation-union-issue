@@ -1,0 +1,14 @@
+type Query{
+	foo: String
+}
+type Mutation{
+	createProduct(symbol: String!): ProductResult
+}
+
+type Product{
+	symbol: String!
+}
+type ProductError{
+	reason: String
+}
+union ProductResult = Product | ProductError 
