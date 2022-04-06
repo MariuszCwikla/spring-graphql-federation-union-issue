@@ -8,7 +8,7 @@ import org.springframework.graphql.execution.GraphQlSource.Builder;
 
 import com.apollographql.federation.graphqljava.Federation;
 
-//@Configuration
+@Configuration
 public class SpringGraphqlFedrationConfiguration {
 	@Bean 
 	public GraphQlSourceBuilderCustomizer exposeFederation () {
